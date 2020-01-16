@@ -56,3 +56,7 @@ button {
 button h5 {
   margin: 3px;
 }
+
+#outputFood{
+  flex-wrap: wrap;
+}

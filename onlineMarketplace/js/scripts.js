@@ -14,7 +14,12 @@ $(document).ready(function() {
   $('input[type="checkbox"]').click(function(){
     if($(this). is(":checked")){
       console.log(this.value);
-      $("#outputFood").append(this.value)
+
+      var textElement = document.createElement("div");
+      textElement.className = "foodItem";
+      textElement.innerText = this.value;
+      
+      $("#outputFood").append(textElement)
       }
       else if($(this). is(":not(:checked)")){
       console.log(this.value)
