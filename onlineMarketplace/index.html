@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/jquery-3.4.1.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/scripts.js"></script>
+  <title>Online Marketplace</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Online Marketplace</h1>
+    <h5>Buy my food.</h5>
+
+    <form id="formBox">
+
+    <!-- Product -->
+
+    <div class="form-group product">
+      <center><label id="pizza"> 
+        <img src="https://www.mountainmikespizza.com/dbcwp/wp-content/uploads/2018/08/MountainMikes-Pepperoni-768.jpg" alt="">
+        <input type="checkbox" id="foodInput" class="form-control pizza" value="Pizza">
+        <p>Pizza</p>
+      </label>
+      <label id="tacos"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQBCiiNsfFHDDzZBFluHfRuynK6Bgehkb_7D7EhJHWTciJG-i3bg&s" alt="">
+        <input type="checkbox" id="foodInput" class="form-control tacos" value="Tacos">
+        <p>Tacos</p>
+      </label>
+      <label id="burgers"> 
+        <img src="https://image.businessinsider.com/5d8ca1222e22af53447766c2?width=1100&format=jpeg&auto=webp" alt="">
+        <input type="checkbox" id="foodInput" class="form-control burgers" value="Burgers">
+        <p>Burgers</p>
+      </label></center>
+    </div>
+
+
+    <!-- User details -->
+
+    
+      <div class="form-group name">
+        <label for="name">Name:</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-group address">
+        <label for="address">Address:</label>
+        <input id="address" class="form-control" type="text">
+      </div>
+
+    <!-- Receipt -->
+
+    <!-- Submit button -->
+
+    <button type="submit" data-toggle="modal" data-target="#modal"><h5>Buy.</h5></button>
+
+    <!-- Modal Receipt -->
+
+    <div class="modal fade" id="modal" role="dialog">
+      <div class="modal-dialog">
+
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4>Online Market</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Receipt</p>
+            <div id="outputFood" class="output"><br></div>
+            <br>
+            <div id="outputName" class="output"></div>
+            <div id="outputAddress" class="output"></div>
+          </div>
+          <div class="modal-footer">
+            <p>Thank You!</p>
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </form>
+
+  </div>
+</body>
+</html>
